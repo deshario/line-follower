@@ -1,0 +1,115 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puckGroundSensors.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/obstacles/protos/OilBarrel.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/traffic/protos/TrafficCone.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/kitchen/utensils/protos/Cookware.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/animals/protos/Dog.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.40140323050674387 0.40080628424069703 0.8235470654746547 1.7651903183850108
+  position -0.5434563452082183 -1.7141329650896877 2.0782270895697232
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation -0.548863 0.0787662 8.1265e-14
+  floorSize 2 2
+  floorTileSize 2 2
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "my_map.png"
+      ]
+      repeatS FALSE
+      repeatT FALSE
+    }
+    roughness 1
+    metalness 0
+  }
+}
+Cookware {
+  translation -0.5330688798976339 0.025688860004721856 -0.0024069349824188263
+  rotation 0.0004194661984289767 -0.00041946543060780185 0.9999998240484149 1.5707983332202262
+  mass 0.4
+}
+OilBarrel {
+  translation -0.391526 0.232389 2.04301e-14
+  rotation 0 0 1 0.261799
+  height 0.2
+  radius 0.05
+}
+OilBarrel {
+  translation 0.142587 0.0748871 2.39982e-14
+  rotation 0 0 1 0.1308996938995747
+  name "oil barrel(2)"
+  height 0.4
+  radius 0.04
+}
+OilBarrel {
+  translation -1.20228 0.501845 1.06651e-14
+  name "oil barrel(1)"
+  height 0.2
+  radius 0.05
+}
+WoodenBox {
+  translation 0.125335 0.611844 0.03
+  rotation 0 0 -1 -5.307179586466759e-06
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.790024 -0.683571 0.03
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.245767 0.619226 0.03
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "wooden box(2)"
+  size 0.05 0.05 0.05
+}
+E-puck {
+  translation -1.2287672332252622 -0.6944435487766856 -6.478212993407499e-05
+  rotation -0.000804256205542338 0.01310687243604833 0.9999137778163182 -0.051197815230431765
+  controller "mero_controller"
+  turretSlot [
+    Compass {
+    }
+  ]
+  groundSensorsSlot [
+    E-puckGroundSensors {
+      rotation 0 0 1 4.6928e-06
+    }
+  ]
+}
+TrafficCone {
+  translation -0.440669 -0.451555 -6.04544e-14
+  scale 0.2
+}
+Dog {
+  translation -0.924219 -0.427339 -2.06406e-14
+  rotation 0 0 -1 2.3562
+  scale 0.4
+}
+Dog {
+  translation -0.139829 -0.405666 -5.41188e-14
+  rotation 0 0 -1 0.785404
+  scale 0.4
+  name "dog(1)"
+}
+Dog {
+  translation -0.867223 0.408636 -1.7465e-14
+  rotation 0 0 1 2.35619
+  scale 0.4
+  name "dog(2)"
+}
